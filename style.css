@@ -1,0 +1,163 @@
+         *{   margin: 0px;   padding: 0px;}
+
+         body{
+            background-image: linear-gradient(#355772, #81b374);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 100px;
+            color: #fff im !important;
+         }
+         a{
+            text-decoration: none;
+            color: white;
+         }
+
+         h1 {
+            cursor: pointer;
+            color: white;
+            position: relative;
+            text-align: center;
+            font-size: 2.3rem;
+            margin-top: 20px;
+            transition: color .35s  ease-in;
+         }
+         h1:hover{
+            color: rgb(113, 252, 233);
+         }
+         img{
+            max-width: 100%;
+            display: block;
+            border-radius: 0 10px 10px 0;
+         }
+
+         .container{
+            
+            color: whitesmoke;
+            font-size: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 200px;
+            border-radius: 10px ;
+               box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+         }
+         .container > div:nth-child(1){
+            flex: 1 1 230px;
+            padding: 15px;
+            border-radius: 10px 0 0 10px;
+            background-image: linear-gradient(#77999b, #1C5768);
+         }
+         .container > div:nth-child(2){
+            flex: 1 1 180px;
+            border-radius: 0 10px 10px 0;
+         }
+
+
+         form{
+            padding: 10px;
+            margin: 10px;
+            color: whitesmoke;
+         }
+
+         .logo1{
+            position: absolute;
+            width: 40px;
+            padding-left: 45px;
+
+         }
+         .logo2{
+            position: absolute;
+            cursor: pointer;
+            width: 120px;
+            padding-left: 120px;
+            margin-top: -210px; 
+         }
+
+         .text2{
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            font-size: 2.4rem;
+            padding-left: 110px;
+            margin-top: -90px; 
+            
+            transition: color .35s  ease-in;
+         }
+         .text2:hover{
+            color: darkcyan;
+         }
+            
+         form > span {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+         }
+         
+         form > span > input{
+            display: block;
+            font-size: 1.2rem;
+            
+            color: whitesmoke;
+            width: 100%;
+            background-color: #5782890a;
+            border: none;
+            padding: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid white;
+         }
+         form > span > input[type=text]:focus{
+            border: none;
+         }
+
+         .email input[placeholder]{
+            background-color: brown;
+            color: rgb(13, 211, 89);
+            border: none;
+         }
+
+         .btn{
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            color: rgb(7, 112, 98);
+            background-color: rgb(236, 234, 234);
+            margin-top: 29px;
+            border: none;
+            padding: 14px;
+            border-radius: 5px;
+            box-shadow:         3px 3px 3px rgba(50, 50, 50, 0.77);
+            transition: color .7s  ease-in;
+            transition: background .7s  ease-in;
+         }
+         .btn:hover{
+            
+            margin-top: 30px;
+            padding: 13.4px;
+            background-color: #81b374;
+            border: 1px solid #81b374;
+            color: rgb(255, 255, 255);
+            
+         }
+
+         @media (max-width: 600px){
+            .container{
+               padding: 25px;
+               
+               box-shadow:  none;
+            }
+            .container > div:nth-child(1){
+               border-radius: 10px 10px 0 0;
+               
+            }
+            .container > div:nth-child(2){
+               border-radius: 0 0 10px 10px;
+               display: none;
+            }
+            img{
+               border-radius: 0 0 10px 10px;
+               
+            }
+         }
